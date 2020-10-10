@@ -12,6 +12,7 @@ package Herencia;
 public class Persona extends Object{
     private String Nombre;
     private String Apellido;
+    private int edad;
 
     public Persona() {
     }
