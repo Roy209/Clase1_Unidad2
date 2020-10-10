@@ -22,6 +22,13 @@ public class Persona extends Object{
         this.Apellido = Apellido;
     }
 
+    public Persona(String Nombre, String Apellido, int edad) {
+        this.Nombre = Nombre;
+        this.Apellido = Apellido;
+        this.edad = edad;
+    }
+    
+
     @Override
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
