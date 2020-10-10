@@ -14,6 +14,7 @@ public class Main {
     public static void main(String[] args) {
         Persona P =  new Persona("Luz","Daga");
         System.out.println(P);
+        System.out.println("Hola como estan");
         
     }
 }
