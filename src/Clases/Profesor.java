@@ -3,23 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Herencia;
+package Clases;
 
 /**
  *
  * @author Keni
  */
-public class Persona {
-    protected String Nombre; //Acceso a clases y las clases del mismo packages
+public class Profesor {
+    private String Nombre;
     private String Apellido;
-   
+    private String Especialidad;
 
-    public Persona() {
+    public Profesor() {
     }
 
-    public Persona(String Nombre, String Apellido) {
+    public Profesor(String Nombre, String Apellido, String Especialidad) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
+        this.Especialidad = Especialidad;
     }
 
     public String getNombre() {
@@ -38,7 +39,20 @@ public class Persona {
         this.Apellido = Apellido;
     }
 
-       
-       
+    public String getEspecialidad() {
+        return Especialidad;
+    }
+
+    public void setEspecialidad(String Especialidad) {
+        this.Especialidad = Especialidad;
+    }
+
+    @Override
+    public String toString() {
+        return  "Nombre:" + Nombre + " Apellido:" + Apellido + " Especialidad:" + Especialidad ;
+    }
+    
+    
+        
     
 }

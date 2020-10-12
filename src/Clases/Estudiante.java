@@ -3,25 +3,28 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Herencia;
+package Clases;
 
 /**
  *
  * @author Keni
  */
-public class Persona {
-    protected String Nombre; //Acceso a clases y las clases del mismo packages
+public class Estudiante {
+    private String Nombre;
     private String Apellido;
-   
+    private double Nota;
 
-    public Persona() {
+    public Estudiante() {
     }
 
-    public Persona(String Nombre, String Apellido) {
+    public Estudiante(String Nombre, String Apellido, double Nota) {
         this.Nombre = Nombre;
         this.Apellido = Apellido;
+        this.Nota = Nota;
     }
-
+    
+    
+    
     public String getNombre() {
         return Nombre;
     }
@@ -38,7 +41,20 @@ public class Persona {
         this.Apellido = Apellido;
     }
 
-       
-       
+    public double getNota() {
+        return Nota;
+    }
+
+    public void setNota(double Nota) {
+        this.Nota = Nota;
+    }
+
+    @Override
+    public String toString() {
+        return  "Nombre: "+this.Nombre+" Apellido:"+this.Apellido+" Promedio: "+this.Nota;
+    }
+    
+    
+    
     
 }
