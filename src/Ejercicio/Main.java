@@ -30,22 +30,25 @@ public class Main {
         Examen Ex1 = new ExamenFcea();
         Examen Ex2 = new ExamenIngenieria();
         
-        Ex1.AgregarPostulante(Luz);
-        Ex2.AgregarPostulante(Benjamin);
+            Ex1.AgregarPostulante(Luz);
+            Ex2.AgregarPostulante(Benjamin);
        
        //Terminacion de Examen
-        boolean[] RespuestasPostulante = new boolean[]{false,false,false,true,true,true,false,true,false,false};
+        boolean[] RespuestasPostulante = new boolean[]{true,false,false,true,true,true,false,true,false,true};
         Ex1.ExamenTerminadoManual(RespuestasPostulante);
         Ex2.ExamenTerminadoManual(RespuestasPostulante);
        
+        //Agregamos a la lista de Examen los examenes ya terminados
         ArrayList<Examen> ListaExamen = new ArrayList<>();
         ListaExamen.add(Ex1);
         ListaExamen.add(Ex2);
         
         
         boolean[] Respuestas = new boolean[]{true,false,false,true,true,true,false,true,false,false};
+        
+        System.out.println("**** NOTA DE ESTUDIANTES***********");
         for(Examen ex: ListaExamen){
-            ex.CalcularNota(Respuestas);
+            ex.CalcularNota(Respuestas); //Polimorfismo Puro
             System.out.println("Nota de "+ ex.Postulantee.getNombre()+ " -> "+ex.getNota());
          }
         }

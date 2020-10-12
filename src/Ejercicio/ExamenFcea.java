@@ -36,15 +36,15 @@ public class ExamenFcea extends Examen{
     void CalcularNota(boolean[] Repuesta) {
         double NotaParcial=0;
         for (int i = 0; i <Repuesta.length; i++) {
-            System.out.println(this.ListaPreguntas[i].isResultado() + " == "+ Repuesta[i]);
+            //System.out.println(this.ListaPreguntas[i].isResultado() + " == "+ Repuesta[i]);
             
             if(Repuesta[i] == this.ListaPreguntas[i].isResultado()){
                 if(this.ListaPreguntas[i].getCategoria() == Utils.Fcea){
                     NotaParcial+=2.5;
-                    System.out.println( this.ListaPreguntas[i].getCategoria()+" +2.5  --> "+NotaParcial);
+                    //System.out.println( this.ListaPreguntas[i].getCategoria()+" +2.5  --> "+NotaParcial);
                 }else{
                     NotaParcial+=1.5;
-                    System.out.println(this.ListaPreguntas[i].getCategoria()+" +1.5  --> "+NotaParcial);
+                    //System.out.println(this.ListaPreguntas[i].getCategoria()+" +1.5  --> "+NotaParcial);
                 }
             }
         }
