@@ -34,7 +34,7 @@ public class Delegado extends Estudiante {
         this.Valoracion = Valoracion;
     }
 
-    public String InfoDelegado(){
+    public String Darinfo(){
         return "Nombre: "+ this.getNombre()+ " Apellido:"+this.getApellido()+ " Nota: "+this.getPromedio()+ " Valoracion :"+this.getValoracion();
     }   
     

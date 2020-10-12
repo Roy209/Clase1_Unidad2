@@ -33,7 +33,7 @@ public class Estudiante extends Persona {
         this.Promedio = Promedio;
     }
 
-    public String InfoEstudiante(){
+    public String DarInfo(){
         return "Nombre: "+ this.getNombre()+ " Apellido:"+this.getApellido()+ " Nota: "+this.getPromedio();
     }
     

@@ -30,7 +30,7 @@ public class Profesor extends Persona {
         this.Especialidad = Especialidad;
     }
 
-   public String InfoProfesor(){
+   public String DarInfo(){
         return "Nombre: "+ this.getNombre()+ " Apellido:"+this.getApellido()+ " Especialidad: "+this.getEspecialidad();
     }
     

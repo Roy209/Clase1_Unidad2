@@ -12,7 +12,7 @@ import Herencia.*;
  *
  * @author Keni
  */
-public class Persona {
+public abstract class Persona {
     protected String Nombre; //Acceso a clases y las clases del mismo packages
     private String Apellido;
    
@@ -40,7 +40,8 @@ public class Persona {
     public void setApellido(String Apellido) {
         this.Apellido = Apellido;
     }
-
+    
+    abstract String DarInfo();
        
        
     

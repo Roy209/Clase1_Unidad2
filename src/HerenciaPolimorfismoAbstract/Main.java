@@ -38,15 +38,7 @@ public class Main {
         ListaPersona.add(Profe1);
         
         for (Persona persona : ListaPersona) {
-            if(persona instanceof Estudiante){
-                System.out.println(((Estudiante) persona).InfoEstudiante());
-            }
-            if(persona instanceof Delegado){
-                System.out.println(((Delegado) persona).InfoDelegado());
-            }
-            if(persona instanceof Profesor){
-                System.out.println(((Profesor) persona).InfoProfesor());
-            }
+            System.out.println(persona.DarInfo());
         }
         
         
@@ -80,13 +72,8 @@ public class Main {
         while (IteratorEstudiante.hasNext()) {
             Estudiante EstFlag = IteratorEstudiante.next();
                      
-            if(EstFlag instanceof Delegado){
-                System.out.println(((Delegado) EstFlag ).InfoDelegado());
-            }else{
-                 System.out.println(EstFlag.InfoEstudiante());
-            }
-            
-            
+             System.out.println(EstFlag.DarInfo());
+                     
             if (Primero.getPromedio() < EstFlag.getPromedio()) {
                 Primero = EstFlag;
             }
